@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{background-color: yellow;}
+        tbody{background-color:#ccc;}
+        tfoot{background-color: #255;}
+    </style>
+</head>
+<body>
+    
+    <!-- 기본적인  표 만들기 -->
+     <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+     </table>
+<!-- tr- 행 td 제목- th- 내용 -->
+     <table border="1">
+        <caption><b>웹 브라우저의 종류</b></caption>
+        <tr>
+            <th>브라우저 명</th>
+            <th>회사</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>익스플로러</td>
+            <td>ms</td>
+            <td>http://www.microsoft.com</td>
+        </tr>
+        <tr>
+            <td>크롬</td>
+            <td>google</td>
+            <td>http://www.google.com</td>
+        </tr>
+        <tr>
+            <td>엣지</td>
+            <td>ms</td>
+            <td>http://www.microsoft.com</td>
+        </tr>
+
+     </table>
+    <!--td 태그의 속성을 이용하여 행과 열 합치기  
+    colspan 열을 합친다
+    rolspan 행을 합친다
+    -->
+    <h1>표의 행과 열 합치기</h1>
+    <h3>회원 정보</h3>
+    
+    <table border="1">
+        <tr>
+            <td colspan="2" rowspan="2" width="130px" height="150px">사진</td>
+            <td width="80px">이름</td>
+            <td width="200px"></td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="70px" heigt="50px">주소</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td height="100px">자기소개</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>이름</td>
+                <td>나이</td>
+                <td>주소</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>20</td>
+                <td>서초구</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>20</td>
+                <td>서초구</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">총 인원</td>
+                <td>2명</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+</body>
+</html>
